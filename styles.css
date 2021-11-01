@@ -1,0 +1,103 @@
+
+
+img {
+    height: auto;
+    width: 400px;
+}
+
+html {
+
+    box-sizing: border-box;
+    font-family: "Roboto-Condensed", sans-serif;
+    
+}
+
+main {
+    margin-left: 3rem ;
+    margin-right: 3rem;
+}
+
+
+
+header {
+    
+    background-image: url(images.img/michal-mokrzycki-e_Db0hkk3Lo-unsplash.jpg);
+    height: 230px;
+    background-size: cover;
+    position: relative;
+    
+}
+
+h1 {
+
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: white;
+    overflow-x: hidden;
+    line-height: 200px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    position: absolute;
+    left: 33rem;
+    top: 90px;
+}
+
+
+
+/*Ikoner header*/
+.fas, .far{
+    color: black;
+    font-size: 1.5rem;
+    float: right;
+   
+}
+
+/* Menyseksjon */
+.flexcontainer {
+    background-color: pink;
+    display: flex;
+    
+}
+
+.flexcontainer > div {
+    width: 50%;
+    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center
+    align-content: flex-start;
+    
+}
+
+.menu ul li {
+    list-style: none;
+    float: left;
+    padding: 0.8rem;
+    background-color: white;
+    margin: 0.5rem;
+    border: solid black;
+    border-width: 0.1rem;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+    
+    overflow: hidden;
+
+}
+
+
+
+
+
+
