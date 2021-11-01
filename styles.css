@@ -98,8 +98,8 @@ h1 {
 /*Søkebar*/
 .search {
     width: 25rem;
-    border: solid black
-    border-width: 1px;
+    border: solid black;
+    border-width: 0.2rem;
     border-color: black;
     border-top: none;
     border-left: none;
@@ -367,14 +367,3 @@ li {
 
 /* får ikke til å ikke ha på submit.. last child dritt*/
 
-.submitnewsletter
-
-.submitnewsletter {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    padding: 1rem;
-    border: solid white;
-}
