@@ -75,7 +75,6 @@ h1 {
 }
 
 .menu a:hover {
-    outline: ;
     outline-width: 0.1rem;
     outline-style: groove;
 }
@@ -368,6 +367,7 @@ li {
 
 /* får ikke til å ikke ha på submit.. last child dritt*/
 
+.submitnewsletter
 
 .submitnewsletter {
     color: white;
