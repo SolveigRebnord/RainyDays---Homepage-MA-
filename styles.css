@@ -29,6 +29,7 @@ header {
     height: 230px;
     background-size: cover;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -52,7 +53,7 @@ h1 {
 
 /*Ikoner header*/
 .fas, .far{
-    color: black;
+    color: white;
     font-size: 1.5rem;
     float: right;
    
@@ -71,13 +72,21 @@ display: flex;
 .menu ul li {
     list-style: none;
     float: left;
-   
-
 }
 
 .menu a:hover {
     outline-width: 0.1rem;
     outline-style: groove;
+}
+
+div.nav {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.search {
+    width: 50%;
 }
 
 /*Link/tekst decor*/
@@ -281,11 +290,9 @@ div.shopbycategorytext {
 
 .shopourbestsellers {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     background-image: url(images.img/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
     background-size: cover;
-    
 }
 
 
@@ -295,14 +302,16 @@ div.shopbycategorytext {
 
 .bestsellerleft img {
     width: 80%;
-    height: 90%;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 div.bestsellerleft {
-    width: 50%
+    width: 50%;
+    vertical-align: middle;
 }
 
 div.bestsellerright {
