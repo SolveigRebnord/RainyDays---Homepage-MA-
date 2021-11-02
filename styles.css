@@ -53,7 +53,7 @@ h1 {
     top: 43%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     h1 {
       font-size: 15vw;
       position: none;
@@ -77,7 +77,7 @@ h1 {
     margin-left: 3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .fas, .far {
     
 float: none;
@@ -193,7 +193,7 @@ display: flex;
     width: 15rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .logo img{
         width: 10rem;
         padding-top: 2rem;
@@ -337,7 +337,7 @@ a.linkcategory {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .linkcategory a{
         font-size: 1rem;
     }
@@ -576,13 +576,13 @@ font-size: 2rem;
 margin-right: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .fab div {
         float: left;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .footer {
         padding: 1.3rem;
     }
