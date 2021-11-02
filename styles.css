@@ -4,6 +4,10 @@ img {
     max-width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 section {
     margin-top: 2rem;
     margin-bottom: 3rem;
@@ -59,6 +63,9 @@ h1 {
    
 }
 
+
+
+
 /* Menyseksjon */
 
 /*Hele seksjonen*/
@@ -66,7 +73,23 @@ h1 {
 display: flex;
     width: 100%;
     height: 10rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
+
+
+/* Diven til menybar */
+.nav > div {
+    flex: 50%;
+}
+
+/* Diven til search */
+.search > div {
+    flex: 50%;
+}
+
 
 /*Menyboksene*/
 .menu ul li {
@@ -74,22 +97,7 @@ display: flex;
     float: left;
 }
 
-.menu a:hover {
-    outline-width: 0.1rem;
-    outline-style: groove;
-}
-
-div.nav {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.search {
-    width: 50%;
-}
-
-/*Link/tekst decor*/
+/*Buttons meny*/
 .menu a {
     text-decoration: none;
     color: black;
@@ -103,6 +111,10 @@ div.search {
     margin: 0.5rem;
     border: solid black;
     border-width: 0.1rem;
+}
+.menu a:hover {
+    outline-width: 0.1rem;
+    outline-style: groove;
 }
 
 /*Søkebar*/
@@ -122,43 +134,44 @@ div.search {
     color: black;
 }
 
+
+
+
 /*Inspirasjon/About Us*/
+
+
+.introduction {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.introductionimage > div {
+    flex: 50%;
+}
+
+.logotext > div {
+    flex: 50%;
+}
+
+
 
 /*by-bilde*/
 .introductionimage img {
-    width: 100%;
+    width: 40rem;
 }
 
-div.introductionimage {
-    width: 50%;
-}
 /*logo*/
 .logo img {
     width: 15rem;
 }
 
-div.logo {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-div.logotext {
-    width: 50%;
-    
-    /*for å få kolonne to midtstil vertikalt må vi egt lage en flexbox utav diven som er denne kolonnen. gjør jeg det går derimot ting i to kolonner..*/
-
-}
 
 /*tekst*/
-
-div.introductiontext {
-    width: 20rem;
-    height: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .introductiontext p {
     font-size: 1rem;
@@ -175,12 +188,24 @@ div.introductiontext {
     text-decoration: underline;
 }
 
-/*prøve teit flex*/
-
-.introduction {
-    display: flex;
-    gap: 2rem;
+div.introductiontext {
+    width: 20rem;
 }
+
+div.logotext {
+    width: fit-content;
+    height: fit-content;
+   
+}
+
+div.logotext img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2rem;
+}
+
+
 
 
 
@@ -290,33 +315,46 @@ div.shopbycategorytext {
 
 .shopourbestsellers {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     background-image: url(images.img/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
     background-size: cover;
-}
-
-
-#raindrops {
-    width: 20%;
+    height: 50rem;
 }
 
 .bestsellerleft img {
     width: 80%;
+    height: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+
+.bestsellerright img {
+    display: block;
+    width: 40%;
+    height: 50%;
+    padding-bottom: 5rem;
+}
 
 
 div.bestsellerleft {
-    width: 50%;
-    vertical-align: middle;
+    flex: 50%;
+    width: fit-content;
 }
 
 div.bestsellerright {
-    width: 50%;
+    flex: 50%;
+    width: fit-content;
 }
+
+
+#shopourbestsellers {
+display: block;
+}
+
 
 .bestsellerright a {
     color: white;
