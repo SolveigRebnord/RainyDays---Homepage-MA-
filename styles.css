@@ -9,7 +9,7 @@ img {
 }
 
 section {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
 }
 
@@ -38,10 +38,10 @@ header {
 }
 
 h1 {
-
+    
     text-transform: uppercase;
     letter-spacing: 1rem;
-    font-size: 8.6rem;
+    font-size: 9vw;
     font-weight: 600;
     color: white;
     overflow-x: hidden;
@@ -49,9 +49,20 @@ h1 {
     margin-top: 0%;
     margin-bottom: 0%;
     position: absolute;
-    left: 20rem;
-    top: 90px;
+    left: 35vw;
+    top: 43%;
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 15vw;
+      position: none;
+      left: 15%;
+      letter-spacing: -0.2rem;
+      
+    }
+  }
+
 
 
 
@@ -59,9 +70,23 @@ h1 {
 .fas, .far{
     color: white;
     font-size: 1.5rem;
-    float: right;
-   
+    float: left;
+    position: relative;
+    top: 80%;
+    margin-right: 0.5rem;
+    margin-left: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+    .fas, .far {
+    
+float: none;
+      margin-right: 0%;
+      float: none;
+      top: 3rem;
+     
+    }
+  }
 
 
 
@@ -135,8 +160,6 @@ display: flex;
 }
 
 
-
-
 /*Inspirasjon/About Us*/
 
 
@@ -168,6 +191,13 @@ display: flex;
 /*logo*/
 .logo img {
     width: 15rem;
+}
+
+@media screen and (max-width: 600px) {
+    .logo img{
+        width: 10rem;
+        padding-top: 2rem;
+    }
 }
 
 
@@ -220,9 +250,9 @@ div.logotext img {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    padding: 1rem;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    padding: 1.5vw;
     border: solid white;
 }
 
@@ -255,9 +285,9 @@ div.buttonshopwoman :hover {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    padding: 1rem;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    padding: 1.5vw;
     border: solid white;
 }
 
@@ -291,11 +321,11 @@ div.shopbycategoryimages {
 }
 
 h2.adventure {
-    padding-top: 2rem;
+    padding-top: 3vh;
     text-align: right;
-    font-size: 2.1rem;
+    font-size: 3vw;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.2vw;
 }
 
 a.linkcategory {
@@ -303,7 +333,14 @@ a.linkcategory {
     text-align: right;
     color: black;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2vw;
+}
+
+
+@media screen and (max-width: 600px) {
+    .linkcategory a{
+        font-size: 1rem;
+    }
 }
 
 div.shopbycategorytext {
@@ -314,6 +351,7 @@ div.shopbycategorytext {
 /* Shop our bestsellers */
 
 .shopourbestsellers {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -329,6 +367,8 @@ div.shopbycategorytext {
     width: 80%;
     height: 50%;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -337,66 +377,106 @@ div.shopbycategorytext {
     width: 40%;
     height: 50%;
     padding-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 
 div.bestsellerleft {
     flex: 50%;
     width: fit-content;
+    height: fit-content;
+    
 }
 
 div.bestsellerright {
     flex: 50%;
     width: fit-content;
+    height: fit-content;
+    
 }
 
 
 #shopourbestsellers {
 display: block;
+width: 19.5rem;
+height: 3.5rem;
+
 }
 
 
 .bestsellerright a {
+    display: block;
+   
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.9rem;
     border: solid white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
 }
 
 
 
+@media screen and (max-width: 800px) {
+    .bestsellerright img {
+        display: none;
+    }
+}
 
 /* Newsletter */
 
 .newsletter {
+    width: 100%;
     display: flex;
-}
-
-.imagenewsletter img {
-    width: 15rem;
-
-    padding: 4rem;
-    border: solid black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     
 }
 
 div.newsletterform {
-    width: 100%;
-    
+    flex: 50%;
 }
 
+
 div.imagenewsletter {
-    width: 100%;
-    
+    flex: 50%;
 }
+
+
+.imagenewsletter img {
+    width: 20rem;
+    padding: 4rem;
+    border: solid black;
+    border-width: 0.1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1231px) {
+    .imagenewsletter img {
+        display: none;
+    }
+}
+
 
 
 form {
     background-color: #7C6F61;
-    padding: 2rem
+    padding: 2rem;
+    width: 35rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -458,35 +538,68 @@ li {
 footer {
     background-image: url(images.img/noah-silliman-i2J9jnvaAbU-unsplash.jpg);
     background-size: cover;
-    margin-top: 10rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-top: 1rem;
 }
 
-.footer {
-    display: grid;
-    grid-template-areas: 
-    'socialmedia footermenu'
-    'footer footer footer';
-    padding-right: 5rem;
-    padding-left: 5rem;
+.footerflex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 
-.socialmedia div {
-    align-content: flex-end;
+.socialmedia > div {
+    
+    flex: 50%;
+}
+
+.footermenu > div {
+   
+    flex: 50%;
+}
+
+div.socialmedia {
+    margin-left: 2rem;
 }
 
 
 
-
+/* Social Media ikoner */
 .fab {
 color: white;
 font-size: 2rem;
 margin-right: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .fab div {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 1.3rem;
+    }
+}
+
+
+/* Meny */
 .footermenu ul {
     list-style: none;
     text-align: end;
+    margin: 0;
 }
+
+ul > li:last-child {
+    padding-bottom: 0;
+}
+  
 
 .footermenu a {
     text-decoration: none;
@@ -497,12 +610,15 @@ margin-right: 2rem;
     text-transform: uppercase;
 }
 
+
+/* Copyright */
 .copyright {
     color: white;
     letter-spacing: 0.1rem;
     word-spacing: 2rem;
     text-align: center;
     font-size: 0.8rem;
+    padding-top: 1rem;
 }
 
 div.copyright {
