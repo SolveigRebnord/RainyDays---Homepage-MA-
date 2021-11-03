@@ -53,15 +53,6 @@ h1 {
     top: 43%;
 }
 
-@media screen and (max-width: 479px) {
-    h1 {
-      font-size: 15vw;
-      position: none;
-      left: 15%;
-      letter-spacing: -0.2rem;
-      
-    }
-  }
 
 
 
@@ -77,16 +68,6 @@ h1 {
     margin-left: 3rem;
 }
 
-@media screen and (max-width: 479px) {
-    .fas, .far {
-    
-float: none;
-      margin-right: 0%;
-      float: none;
-      top: 3rem;
-     
-    }
-  }
 
 
 
@@ -193,12 +174,7 @@ display: flex;
     width: 15rem;
 }
 
-@media screen and (max-width: 479px) {
-    .logo img{
-        width: 10rem;
-        padding-top: 2rem;
-    }
-}
+
 
 
 /*tekst*/
@@ -337,11 +313,7 @@ a.linkcategory {
 }
 
 
-@media screen and (max-width: 479px) {
-    .linkcategory a{
-        font-size: 1rem;
-    }
-}
+
 
 div.shopbycategorytext {
     padding-bottom: 2rem;
@@ -424,11 +396,6 @@ height: 3.5rem;
 
 
 
-@media screen and (max-width: 800px) {
-    .bestsellerright img {
-        display: none;
-    }
-}
 
 /* Newsletter */
 
@@ -462,11 +429,7 @@ div.imagenewsletter {
     margin-right: auto;
 }
 
-@media screen and (max-width: 1231px) {
-    .imagenewsletter img {
-        display: none;
-    }
-}
+
 
 
 
@@ -576,17 +539,6 @@ font-size: 2rem;
 margin-right: 2rem;
 }
 
-@media screen and (max-width: 479px) {
-    .fab div {
-        float: left;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .footer {
-        padding: 1.3rem;
-    }
-}
 
 
 /* Meny */
@@ -625,3 +577,65 @@ div.copyright {
     width: 100%;
     height: fit-content;
 }
+
+
+/* Forsøk på responsiveness, som fungerer dårlig fra desktop til mobil.. */
+
+@media screen and (max-width: 800px) {
+    .bestsellerright img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .fab div {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer {
+        padding: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1231px) {
+    .imagenewsletter img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .linkcategory a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .logo img{
+        width: 10rem;
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .fas, .far {
+    
+float: none;
+      margin-right: 0%;
+      float: none;
+      top: 3rem;
+     
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    h1 {
+      font-size: 15vw;
+      position: none;
+      left: 15%;
+      letter-spacing: -0.2rem;
+      
+    }
+  }
